@@ -39,13 +39,13 @@
     * Handle events on Home page.
     */
     init() {
-    this.dropdownLinks.forEach((link) => {
-      link.addEventListener('click', (e) => {
-        const currentTarget = e.currentTarget;
-        e.preventDefault();
-        this.handleDropdownToggle(currentTarget);
-      }, false);
-    });
+      this.dropdownLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const currentTarget = e.currentTarget;
+          e.preventDefault();
+          this.handleDropdownToggle(currentTarget);
+        }, false);
+      });
     }
 
     /**
