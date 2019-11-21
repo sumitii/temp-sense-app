@@ -1,0 +1,32 @@
+{
+  "name": "@sumitii/temp-sense-app",
+  "version": "1.0.0",
+  "description": "Temperature sensor front end web application",
+  "main": "js/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-less": "^0.1.0",
+    "harp": "^0.31.0",
+    "jade": "^1.11.0",
+    "less": "^3.10.3"
+  },
+  "devDependencies": {
+    "dateformat": "^3.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumitii/temp-sense-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumitii/temp-sense-app/issues"
+  },
+  "homepage": "https://github.com/sumitii/temp-sense-app#readme"
+}
