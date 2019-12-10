@@ -10,6 +10,7 @@ app.set("view engine", "jade")
 
 // Compile LESS file to CSS.
 app.use('/', expressLess(__dirname + '/public'));
+
 // What the site should read from.
 app.use(express.static(__dirname + '/public'))
 
@@ -34,4 +35,11 @@ app.get('/', function (req, res) {
       res.render('index', { title: 'temperatureData', data: result });
     }
   });
+});
+
+/*
+ * Settings page route
+*/
+app.get('/settings', function (req, res) {
+  res.render('settings', {});
 });

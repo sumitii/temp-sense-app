@@ -1,0 +1,15 @@
+include ./_layout.jade
+div.container
+  include partials/navigation.jade
+  div.menu-icon__wrapper
+  a.menu-icon.js-navigation-button(href="#")
+    svg.icon__hamburger-menu(role="img" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
+      path(d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z")
+  h1.header__h1 Settings
+  div
+    p.settings__link-header Profile
+    a.settings__link(href="/edit-profile") Edit profile
+  div.divider-line
+  div
+    p.settings__link-header Sensor settings
+    a.settings__link(href="/edit-sensor-settings") Edit sensor settings
