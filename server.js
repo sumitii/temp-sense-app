@@ -43,3 +43,7 @@ app.get('/', function (req, res) {
 app.get('/settings', function (req, res) {
   res.render('settings', {});
 });
+
+app.get('/edit-profile', function (req, res) {
+  res.render('edit-profile', {});
+});

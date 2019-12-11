@@ -1,0 +1,31 @@
+include ./_layout.jade
+div.container
+  include partials/navigation.jade
+  div.menu-icon__wrapper
+  a.menu-icon.js-navigation-button(href="#")
+    svg.icon__hamburger-menu(role="img" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32")
+      path(d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z")
+  h1.header__h1 My profile
+  div.row
+    form
+      div.form-group
+        label.form-input__text-label(for="name") Full name
+        input.form-input__text-input(type="text", name="name")
+      div.form-group
+        label.form-input__text-label(for="email") Email
+        input.form-input__text-input(type="text", name="email")
+      div.form-group
+        label.form-input__text-label(for="password") Password
+        input.form-input__text-input(type="text", name="password")
+      fieldset
+        label.form-input__header(for="notification") Notification settings
+        div.form-input__wrapper
+          input.form-input(type="radio", name="sms" value="SMS")
+          label.form-input__label(for="sms") SMS
+        div.form-input__wrapper
+          input.form-input(type="radio", name="email" value="Email")
+          label.form-input__label(for="email") Email
+        div.form-input__wrapper
+          input.form-input(type="radio", name="both" value="SMS and Email")
+          label.form-input__label(for="both") SMS and Email
+      input.form-input__submit(type="submit" value="Submit")

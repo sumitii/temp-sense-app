@@ -20,3 +20,47 @@
   margin: 36px 0; 
   width: 100%;
 }
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  &__text-label {
+    color: @blue-600;
+    font-size: 14px;
+  }
+
+  &__text-input {
+    background: transparent !important;
+    border-color: @blue-900 !important;
+    border-radius: 0 !important;
+    border-width: 0 0 2px !important;
+    padding-left: 0 !important;
+    width: 100%;
+  }
+
+  &__header {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  &__wrapper {
+    align-items: baseline;
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  &__label {
+    margin-left: 16px;
+  }
+
+  &__submit {
+    background-color: @brown-600 !important;
+    color: @white !important;
+    display: block !important;
+    font-size: 16px !important;
+    margin: auto;
+    padding: 0 28px !important;
+  }
+}
