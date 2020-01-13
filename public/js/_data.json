@@ -1,0 +1,14 @@
+{
+  "location": [
+    {
+      "name": "Main house (Dover)",
+      "minimumTemperature": 48,
+      "maximumTemperature": 70
+    },
+    {
+      "name": "Vacation house (Bora Bora)",
+      "minimumTemperature": 64,
+      "maximumTemperature": 78
+    }
+  ]
+}

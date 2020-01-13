@@ -3,6 +3,7 @@ var express = require("express"),
 var app = express();
 var request = require('request');
 var dateFormat = require('dateformat');
+var data = require('./public/js/_data.json');
 
 //set view engine
 app.set('views', __dirname + '/public')
@@ -46,4 +47,8 @@ app.get('/settings', function (req, res) {
 
 app.get('/edit-profile', function (req, res) {
   res.render('edit-profile', {});
+});
+
+app.get('/edit-sensor', function (req, res) {
+  res.render('edit-sensor', {data: data});
 });
